@@ -11,6 +11,14 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 A full description is available at the site where the data was obtained: 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 
+## Usage
+1. Clone this github repository to your computer.
+2. Verify that the working directory in the run_analysis.R program matches one on 
+your computer.
+2. Run run_analysis.R program.
+3. The program verifies that the required dependent packages are installed. If they
+need to be installed, you may need to restart R-Studio and re-run the program.
+
 ## Project Summary
 run_analysis.R does the following:
 1.Merges the training and the test sets to create one data set.
