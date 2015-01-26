@@ -24,7 +24,7 @@ loadActivityLabels <- function() {
 
 # Load Features, by optionally specifying which variables to include for analysis;
 # the defaults are: mean and standard deviation
-loadFeatures <- function(neededFeatures="mean()|std()") {
+loadFeatures <- function(neededFeatures="-(mean|std)\\(\\)") {
   result <- loadFileAsTable("features.txt")  
   result$needed <- grepl(neededFeatures, result[,2]) 
   result
