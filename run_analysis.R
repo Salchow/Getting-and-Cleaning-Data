@@ -53,7 +53,7 @@ getData <- function(dataType) {
   
   y <- loadData("y", dataType)
   # add label for each activity
-  y <- merge(y, activityLabels, by="V1", all.x=TRUE)[,1:2]
+  y[,2] <- activityLabels[y[,1], 2]
   # add names to variables
   names(y) = c("activityid", "activitylabel")
   
